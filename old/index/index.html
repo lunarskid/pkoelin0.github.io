@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="main">
+<body>
+</video>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<nav class="navbar">
+            <ul>
+                <li><a href="http://pkoelin0.github.io/old/index/index.html">Home</a></li>
+                <li><a href="http://pkoelin0.github.io/other/index.html">Other</a></li>
+                <a href="http://pkoelin0.github.io/fun/index.html">
+                <li><img src="/images/icon.png" alt="Color Mode"</img>
+            </ul>
+        </nav>
+<link rel="stylesheet" href="jquery-ui.css" type="text/css" />
+         
+        <!-- Load jQuery first before jQuery UI! -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<style>
+.button {
+  background-color: slategray;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+</style>
+
+
+<title>pkoelin0's Site</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css"href="style.css">
+
+<div class="logo">
+
+<img src="https://www.iconfinder.com/icons/317717/download/png/128"></img>
+
+</div>
+
+<div class="header">
+
+<h1>pkoelin0's Website</h1>
+
+</div>
+
+<div class="loginPrompt">
+
+<button class="button" onclick="logIn()">Test my latest code!</button>
+
+<p id="demo"></p>
+
+<script>
+function logIn() {
+  var txt;
+  var username = prompt("Please enter your username:", "pkoelin0");
+  var passwrd = prompt("Please enter your password:", " . . . . . . . .");
+  if (username == null || username == "") {
+    txt = "User cancelled the login.";
+  } else {
+      txt = "Loggging in...";
+      txt = "Hello " + username + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</div>
+</head>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>popup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="show-btn">
+      <button>Show Notifications</button>
+    </div>
+<div class="modal">
+      <div class="top-content">
+        <div class="left-text">
+*1* New Notification From Apple</div>
+<span class="close-icon"><img class="fas fa-times" src="images/circle.png"></img></span>
+        <div class="mac">
+        <img src="images/mac.png">
+</div>
+</div>
+<div class="bottom-content">
+        <div class="text">
+A macOS update is avalable</div>
+<p>
+Download the newest update for security benefits.</p>
+<div class="close-btn">
+        <button onclick="openFullscreen();" id="button1">DOWNLOAD</button>
+        <button onclick="window.location.href='https://fakeupdate.net/apple/';" id="button">UPDATE NOW</button>
+        </div>
+</div>
+</div>
+<script>
+/* Get the element you want displayed in fullscreen mode (a video in this example): */
+var elem = document.getElementById("button1");
+
+/* When the openFullscreen() function is executed, open the element in fullscreen.
+Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+        $('.show-btn').click(function(){
+        $('.modal').toggleClass("show");
+        $('.show-btn').addClass("disabled");
+      });
+      $('.close-icon').click(function(){
+        $('.modal').toggleClass("show");
+        $('.show-btn').removeClass("disabled");
+      });
+      $('.close-btn').click(function(){
+        $('.modal').toggleClass("show");
+        $('.show-btn').removeClass("disabled");
+      });
+    </script>
+  </body>
+</html>
