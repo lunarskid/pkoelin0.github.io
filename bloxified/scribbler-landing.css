@@ -129,7 +129,6 @@ nav {
 /* changelog section */
 .changelog {
   background-color: var(--bg-color);
-  padding: 2rem 0;
 }
 
 .changelog__item {
@@ -153,6 +152,10 @@ nav {
 .changelog__callout {
   margin: 3rem auto 2rem auto;
   text-align: center;
+}
+
+.wrapper {
+  padding: 2rem 0;
 }
 
 @media (max-width: 750px) {
